@@ -27,7 +27,7 @@ import type { Document } from "../document.js";
  * alamat, dua file itu harus berubah bersama - dan probe yang akan
  * menjatuhkan kalau salah satu lupa. */
 export const KOP = {
-  name: "PT. SYUKUR BERSAUDARA",
+  name: "Alenkosa",
   line1: "PERUSAHAAN GALANGAN DAN INDUSTRI KAPAL",
   hq: "KANTOR PUSAT SAMARINDA - KALIMANTAN TIMUR",
   addr1: "Jl. Mulawarman No.23 Telp. (0541) 6246750, Admin 08115524456",

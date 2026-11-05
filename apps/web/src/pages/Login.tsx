@@ -83,11 +83,11 @@ export default function Login() {
 
         <div className="relative flex items-center gap-3">
           <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-white shadow-lg shadow-black/20">
-            <img src="/logo-sb.png" alt="Logo perusahaan" width={36} height={36} className="h-9 w-9 object-contain" />
+            <span aria-hidden className="text-2xl font-black tracking-[-0.06em] text-rose-700">A</span>
           </span>
           <div>
             <p className="text-base font-bold tracking-[-0.01em] text-white">ISMS Galangan</p>
-            <p className="text-sm text-white/90">PT Syukur Bersaudara</p>
+            <p className="text-sm text-white/90">Alenkosa</p>
           </div>
           <span className="ml-auto inline-flex items-center gap-1.5 rounded-full bg-white/15 px-3 py-1 text-xs font-medium text-white ring-1 ring-inset ring-white/25 backdrop-blur-sm">
             <ShipWheel className="h-3.5 w-3.5" /> v2026.1
@@ -126,7 +126,7 @@ export default function Login() {
           </ul>
         </motion.div>
 
-        <p className="relative text-xs text-white/90">© 2026 PT Syukur Bersaudara</p>
+        <p className="relative text-xs text-white/90">© 2026 Alenkosa</p>
       </div>
 
       {/* Panel kanan - form */}
@@ -139,9 +139,9 @@ export default function Login() {
           className="relative my-auto w-full max-w-md"
         >
           <div className="mb-6 flex items-center gap-3 lg:hidden">
-            <img src="/logo-sb.png" alt="Logo perusahaan" width={40} height={40} className="h-10 w-10 shrink-0 object-contain" />
+            <span aria-hidden className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-rose-50 text-2xl font-black tracking-[-0.06em] text-rose-700">A</span>
             <div>
-              <p className="font-semibold tracking-[-0.01em] text-navy-900">ISMS PT Syukur Bersaudara</p>
+              <p className="font-semibold tracking-[-0.01em] text-navy-900">ISMS Alenkosa</p>
               <p className="text-xs text-steel-500">{t.auth.tagline}</p>
             </div>
           </div>

@@ -475,12 +475,12 @@ export default function AppShell() {
     <div className="flex h-full flex-col bg-white border-r border-slate-200/80 text-slate-800 shadow-[2px_0_12px_rgba(0,0,0,0.02)]">
       <div className={`flex h-16 items-center gap-3 border-b border-slate-100 px-4 ${mini ? "justify-center px-3" : ""}`}>
         <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gradient-to-tr from-rose-50 to-red-50 border border-rose-100/90 shadow-2xs">
-          <img src="/logo-sb.png" alt="Logo perusahaan" width={30} height={30} className="h-[28px] w-[28px] object-contain" />
+          <span aria-hidden className="text-xl font-black tracking-[-0.06em] text-rose-700">A</span>
         </span>
         {!mini && (
           <div className="min-w-0">
             <p className="text-[15px] font-bold leading-tight tracking-[-0.01em] text-slate-900">ISMS Galangan</p>
-            <p className="truncate text-xs font-medium text-slate-400">PT Syukur Bersaudara</p>
+            <p className="truncate text-xs font-medium text-slate-400">Alenkosa</p>
           </div>
         )}
       </div>

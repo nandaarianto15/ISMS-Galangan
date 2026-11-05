@@ -1422,7 +1422,7 @@ const { data, add, update, remove, log, branch, inBranch, sessionGeneration, isS
           target.push({
             name: `Mutasi ${bbAkun}`,
             header: {
-              company: "PT Syukur Bersaudara",
+              company: "Alenkosa",
               title: `Buku Besar Pembantu - ${bbAkun} ${String(coaRows.find((c) => String(c.kode) === bbAkun)?.nama ?? "")}`,
               period: `Per ${bbAsOf}`,
             },

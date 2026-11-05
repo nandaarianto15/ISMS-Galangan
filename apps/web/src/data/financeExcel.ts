@@ -3,7 +3,7 @@
 // membawa `periode` (YYYY-MM), jurnal penyesuaian membawa `tgl` (YYYY-MM-DD).
 // Historikal bulan lain DIHITUNG LIVE dari dokumen (jurnal, payables, invoices,
 // payroll) di Finance.tsx - bukan snapshot hardcode.
-// PT Syukur Bersaudara - sumber kebenaran revisi modul finance; angka contoh, bukan live.
+// Alenkosa - sumber kebenaran revisi modul finance; angka contoh, bukan live.
 export interface CoaExcel { kode: string; nama: string; dk: string; nrlr: string }
 export const COA_EXCEL: CoaExcel[] = [
   { kode: '1-000', nama: 'A K T I V A', dk: '-', nrlr: '-' },

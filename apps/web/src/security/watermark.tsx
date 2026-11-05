@@ -177,7 +177,7 @@ export default function Watermark() {
   const timeLabel = fmtWita(now);
   const lines = useMemo(
     () => [
-      `PT Syukur Bersaudara — ISMS Galangan`,
+      `Alenkosa — ISMS Galangan`,
       `${who} · ${timeLabel} · ${geo.ip}${loc ? ` · ${loc}` : ""} · ${device}`,
     ],
     [who, timeLabel, geo.ip, loc, device]

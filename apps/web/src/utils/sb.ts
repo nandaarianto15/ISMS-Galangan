@@ -1,9 +1,9 @@
-// Helper turunan RawData PT Syukur Bersaudara (docs/RawData).
+// Helper turunan RawData Alenkosa (docs/RawData).
 // Rumus invoice: TOTAL=Jasa+Material, DPP=TOTAL*11/12, PPN=12%*DPP (0 bila SKDT),
 // PPh=2%*Jasa, Grand=TOTAL+PPN-PPh-DP-Retensi. Tonase plat: P*L*T*7850 (mm -> kg).
 
 export const SB_KOP = {
-  name: "PT. SYUKUR BERSAUDARA",
+  name: "Alenkosa",
   line1: "PERUSAHAAN GALANGAN DAN INDUSTRI KAPAL",
   hq: "KANTOR PUSAT SAMARINDA - KALIMANTAN TIMUR",
   addr1: "Jl. Mulawarman No.23 Telp. (0541) 6246750, Admin 08115524456",

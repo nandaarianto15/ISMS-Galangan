@@ -1,7 +1,7 @@
 {
-  "name": "ISMS PT Syukur Bersaudara - Integrated Shipyard Management System",
-  "short_name": "ISMS PT Syukur Bersaudara",
-  "description": "Sistem manajemen galangan kapal PT Syukur Bersaudara: proyek, BoQ, drydock, inventori, procurement, QC, SDM, dan keuangan.",
+  "name": "ISMS Alenkosa - Integrated Shipyard Management System",
+  "short_name": "ISMS Alenkosa",
+  "description": "Sistem manajemen galangan kapal Alenkosa: proyek, BoQ, drydock, inventori, procurement, QC, SDM, dan keuangan.",
   "lang": "id",
   "start_url": "/dashboard",
   "scope": "/",

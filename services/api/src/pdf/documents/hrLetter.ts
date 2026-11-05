@@ -1,4 +1,4 @@
-/* Surat resmi HR PT Syukur Bersaudara yang meniru template Word klien
+/* Surat resmi HR Alenkosa yang meniru template Word klien
  * (catatan CTO 19 Okt: "sesuaikan dokumennya", output harus ~99% sama):
  *
  *   - Surat Peringatan 1 & 2        (template "Surat Peringatan.docx", A4)
@@ -162,7 +162,7 @@ class Pen {
     const ind = (this.right - this.left) / 2;
     const at = { size: o.size, spacing: o.spacing, align: "center" as const, indent: ind };
     this.line([{ text: `Samarinda, ${longDate(o.tanggal)}` }], at);
-    this.line([{ text: "PT. SYUKUR BERSAUDARA", style: "bold" }], at);
+    this.line([{ text: "Alenkosa", style: "bold" }], at);
     this.blank(o.size, o.spacing); this.blank(o.size, o.spacing); this.blank(o.size, o.spacing);
     this.line([{ text: o.nama, style: "bold", underline: true }], at);
     if (o.jabatan) this.line([{ text: o.jabatan, style: "bold" }], at);
@@ -222,7 +222,7 @@ function spLetter(p: Pen, pdf: jsPDF, inp: HrLetterInput): void {
     : "Jika dalam jangka waktu 1 (Satu) Bulan kedepan sejak Surat Peringatan ini diterbitkan dan ternyata saudara kembali melakukan tindakan pelanggaran yang sama, maka kami akan mengeluarkan Surat Peringatan yang Terakhir atau PHK",
   { size: S, spacing: 1.5, justify: true });
   p.blank(S, 1.5);
-  p.para("Demikian surat ini kami sampaikan dan berlaku selama menjadi karyawan PT. SYUKUR BERSAUDARA Kepada yang bersangkutan harap di perhatikan dan di perbaiki dengan segera.", { size: S, spacing: 1.5, justify: true });
+  p.para("Demikian surat ini kami sampaikan dan berlaku selama menjadi karyawan Alenkosa Kepada yang bersangkutan harap di perhatikan dan di perbaiki dengan segera.", { size: S, spacing: 1.5, justify: true });
   p.blank(S, 1.5);
   p.ttd({ size: S, spacing: 1.5, tanggal: inp.tanggal, nama: "Management" });
 }
@@ -241,7 +241,7 @@ function phkLetter(p: Pen, inp: HrLetterInput): void {
   p.blank(S, 1.5);
   const alasan = inp.pelanggaran.join(", ").trim() || "ketidakhadiran tanpa adanya konfirmasi";
   p.para(`Dengan Hormat, Sehubungan dengan Saudara masih melakukan pelanggaran disiplin berupa ${alasan}.`, { size: S, spacing: 1.5, justify: true, after });
-  p.para(`Dengan demikian, terhitung mulai tanggal ${tanggalTerbilang(inp.tanggalEfektif || inp.tanggal)} hubungan kerja antara PT. SYUKUR BERSAUDARA dengan Sdr. ${inp.nama} dinyatakan sudah berakhir. Dan atas nama lembaga, kami menyampaikan banyak terima kasih atas kinerja yang Saudara berikan selama ini.`, { size: S, spacing: 1.5, justify: true, after });
+  p.para(`Dengan demikian, terhitung mulai tanggal ${tanggalTerbilang(inp.tanggalEfektif || inp.tanggal)} hubungan kerja antara Alenkosa dengan Sdr. ${inp.nama} dinyatakan sudah berakhir. Dan atas nama lembaga, kami menyampaikan banyak terima kasih atas kinerja yang Saudara berikan selama ini.`, { size: S, spacing: 1.5, justify: true, after });
   p.para("Demikian surat pemutusan hubungan kerja ini kami sampaikan, dan agar dapat dimaklumi, terima kasih.", { size: S, spacing: 1.5, justify: true, after });
   p.ttd({ size: S, spacing: 1.15, tanggal: inp.tanggal, nama: inp.penandaTangan, jabatan: inp.jabatanPenandaTangan || "HR" });
 }
@@ -258,7 +258,7 @@ function pengalamanLetter(p: Pen, inp: HrLetterInput): void {
   p.field("No", inp.no, { size: S, spacing: 1.15, tab });
   p.field("Hal", "Surat Pengalaman Kerja", { size: S, spacing: 1.15, tab });
   p.y += auto;
-  p.line([{ text: "Dengan ini kami dari " }, { text: "PT. SYUKUR BERSAUDARA", style: "bold" }, { text: " menyatakan bahwa :" }], { size: S, after: 14 });
+  p.line([{ text: "Dengan ini kami dari " }, { text: "Alenkosa", style: "bold" }, { text: " menyatakan bahwa :" }], { size: S, after: 14 });
   const tab2 = 1134 * TWIP;
   p.field("Nama", inp.nama, { size: S, spacing: 1.15, tab: tab2 });
   p.field("Alamat", inp.alamat || "-", { size: S, spacing: 1.15, tab: tab2 });
@@ -294,7 +294,7 @@ function keteranganLetter(p: Pen, inp: HrLetterInput): void {
   p.field("Status", inp.statusKawin || "-", { size: S, spacing: 1.5, tab });
   p.blank(S, 1.15);
   const sejak = longDate(inp.tanggalMulai || inp.tanggal);
-  p.line([{ text: "Benar bekerja sebagai karyawan di " }, { text: "PT. SYUKUR BERSAUDARA", style: "bold" }, { text: ` sejak ${sejak}` }], { size: S, spacing: 1.5 });
+  p.line([{ text: "Benar bekerja sebagai karyawan di " }, { text: "Alenkosa", style: "bold" }, { text: ` sejak ${sejak}` }], { size: S, spacing: 1.5 });
   p.line([{ text: `sampai dengan sekarang, dengan jabatan ${inp.jabatan}.` }], { size: S, spacing: 1.5 });
   p.para("Demikian surat keterangan ini kami buat agar dipergunakan sebagaimana mestinya.", { size: S, spacing: 1.15 });
   p.blank(S, 1.15); p.blank(S, 1.15);

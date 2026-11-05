@@ -5,7 +5,7 @@
  */
 
 export const VBA_MACRO_SOURCE = `' ==============================================================================
-' PT. SYUKUR BERSAUDARA - INTEGRATED SHIPYARD MANAGEMENT SYSTEM (ISMS)
+' ALENKOSA - INTEGRATED SHIPYARD MANAGEMENT SYSTEM (ISMS)
 ' MODUL MACRO VBA APLIKASI KEUANGAN & EXECUTIVE DASHBOARD
 ' Versi: 2.4 Enterprise | Kompatibel: Microsoft Excel 2013, 2016, 2019, 2021, Office 365
 ' ==============================================================================
@@ -261,4 +261,3 @@ export function downloadVbaModule(filename = "ISMS_Financial_Macros.bas"): void 
   document.body.removeChild(a);
   URL.revokeObjectURL(url);
 }
-

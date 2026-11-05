@@ -56,7 +56,7 @@ export default function NeracaLajurCard({ journals, coa, inPeriod, asOf, onExpor
 
   const exportXls = () => exportExcelSheets([{
     name: "Neraca Lajur",
-    header: { company: "PT Syukur Bersaudara", title: "Neraca Lajur", period: `Per ${asOf}` },
+    header: { company: "Alenkosa", title: "Neraca Lajur", period: `Per ${asOf}` },
     rows: [
       styledRow("head", ["Kode", "Akun", ...head.flatMap((h) => [`${h} Debit`, `${h} Kredit`])]),
       ...rows.map((r) => [r.kode, r.nama, ...COLS.flatMap((c) => r[c])]),

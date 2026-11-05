@@ -1,7 +1,7 @@
 // Sumber tunggal seed operasional (dipakai FE via store.tsx DAN dicerminkan ke
 // backend via services/api script seed:mirror → seedFeMirror.ts).
 // Modul murni: tanpa impor React/browser agar bisa dimuat tsx maupun Vite.
-// Baris RawData PT Syukur Bersaudara: id berawalan INV-SB / AP-SB / WO-SB /
+// Baris RawData Alenkosa: id berawalan INV-SB / AP-SB / WO-SB /
 // TRM-SB / M-SB / DS-SB / SJ-SMD / TT-SMD / C-SB / VND-SB / V-SB / QT-SB / KTR-SB.
 import type { StoreItem } from "./store";
 import { JU_PENYESUAIAN_EXCEL } from "./financeExcel";
@@ -725,13 +725,13 @@ export const seedLetters: StoreItem[] = [
   {
     id: "SRT-20260905-001", employeeId: "EMP-005", nama: "Sari Wahyuni",
     jenis: "SP 1", tanggal: "2026-09-05",
-    isi: "Dengan hormat, atas nama perusahaan kami menyatakan bahwa nama tersebut benar-benar karyawan tetap PT Syukur Bersaudara dengan masa kerja aktif.",
+    isi: "Dengan hormat, atas nama perusahaan kami menyatakan bahwa nama tersebut benar-benar karyawan tetap Alenkosa dengan masa kerja aktif.",
     fileUrl: "", fileName: "", createdBy: "Anda", createdAt: "2026-09-05 10:00",
   },
   {
     id: "SRT-20260812-001", employeeId: "EMP-004", nama: "Rudi Hartono",
     jenis: "SP 3", tanggal: "2026-08-12",
-    isi: "Sehubungan dengan berakhirnya kontrak kerja, kami memberitahukan bahwa nama tersebut tidak lagi diperlukan pada PT Syukur Bersaudara terhitung mulai 01 September 2026. Terima kasih atas kerja samanya.",
+    isi: "Sehubungan dengan berakhirnya kontrak kerja, kami memberitahukan bahwa nama tersebut tidak lagi diperlukan pada Alenkosa terhitung mulai 01 September 2026. Terima kasih atas kerja samanya.",
     fileUrl: "", fileName: "", createdBy: "Anda", createdAt: "2026-08-12 14:20",
   },
 ];

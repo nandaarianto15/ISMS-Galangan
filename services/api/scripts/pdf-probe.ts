@@ -665,7 +665,7 @@ const MODELS: Record<string, unknown> = {
     masaPajak: "2026-09",
     npwp: "01.234.567.8-901.000",
     npwpPenyetor: "01.234.567.8-901.000",
-    namaWajibPajak: "PT. SYUKUR BERSAUDARA",
+    namaWajibPajak: "Alenkosa",
     alamat: "Jl. Mulawarman No.23, Samarinda",
     rows: [
       { jenis: "PPN Keluaran", nilai: 185_000_000 },

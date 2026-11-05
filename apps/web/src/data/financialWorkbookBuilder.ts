@@ -54,7 +54,7 @@ export interface FinancialWorkbookParams {
 }
 
 /** Nama perusahaan di kop Excel mengikuti nama aplikasi. */
-const COMPANY_NAME = "PT Syukur Bersaudara";
+const COMPANY_NAME = "Alenkosa";
 
 const BULAN_ID = [
   "Januari", "Februari", "Maret", "April", "Mei", "Juni",

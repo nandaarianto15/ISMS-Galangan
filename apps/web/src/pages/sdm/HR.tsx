@@ -1146,7 +1146,7 @@ const finishTraining = async (t: StoreItem) => {
       defIsi = "Yang bersangkutan telah memberikan konstribusi yang baik bagi perusahaan dan selama bergabung tidak pernah melakukan tindakan yang merugikan perusahaan kami.";
     } else if (/keterangan/i.test(jenis)) {
       defDocNo = `002/SK-SB/SMD/${rom}/${yr}`;
-      defIsi = "Benar bekerja sebagai karyawan di PT. SYUKUR BERSAUDARA";
+      defIsi = "Benar bekerja sebagai karyawan di Alenkosa";
     }
 
     setSuratForm((f) => {
@@ -1175,7 +1175,7 @@ const finishTraining = async (t: StoreItem) => {
   const suratNomor = nextSuratId(suratForm.tanggal || todayISO());
 
   /** Teks surat. SATU fungsi dipakai untuk preview di form, pratinjau arsip,
-   *  dan pratinjau teks - persis mengikuti template resmi dokumen PT Syukur Bersaudara. */
+   *  dan pratinjau teks - persis mengikuti template resmi dokumen Alenkosa. */
   const suratText = (row: {
     id?: unknown; jenis?: unknown; tanggal?: unknown; isi?: unknown;
     nama?: unknown; nik?: unknown; role?: unknown; dept?: unknown; branch?: unknown;
@@ -1236,10 +1236,10 @@ const finishTraining = async (t: StoreItem) => {
         "",
         tind,
         "",
-        "Demikian surat ini kami sampaikan dan berlaku selama menjadi karyawan PT. SYUKUR BERSAUDARA Kepada yang bersangkutan harap di perhatikan dan di perbaiki dengan segera.",
+        "Demikian surat ini kami sampaikan dan berlaku selama menjadi karyawan Alenkosa Kepada yang bersangkutan harap di perhatikan dan di perbaiki dengan segera.",
         "",
         `Samarinda, ${tgl}`,
-        "PT SYUKUR BERSAUDARA",
+        "Alenkosa",
         "",
         "Management",
         "",
@@ -1262,7 +1262,7 @@ const finishTraining = async (t: StoreItem) => {
         "Dengan Hormat,",
         `Sehubungan dengan Saudara masih melakukan pelanggaran disiplin berupa ${isi || "ketidakhadiran tanpa adanya konfirmasi"}.`,
         "",
-        `Dengan demikian, terhitung mulai tanggal ${tSelesai} hubungan kerja antara PT. SYUKUR BERSAUDARA dengan Sdr. ${nama} dinyatakan sudah berakhir. Dan atas nama lembaga, kami menyampaikan banyak terima kasih atas kinerja yang Saudara berikan selama ini.`,
+        `Dengan demikian, terhitung mulai tanggal ${tSelesai} hubungan kerja antara Alenkosa dengan Sdr. ${nama} dinyatakan sudah berakhir. Dan atas nama lembaga, kami menyampaikan banyak terima kasih atas kinerja yang Saudara berikan selama ini.`,
         "",
         "Demikian surat pemutusan hubungan kerja ini kami sampaikan, dan agar dapat dimaklumi, terima kasih.",
         "",
@@ -1280,7 +1280,7 @@ const finishTraining = async (t: StoreItem) => {
         `No: ${docNo}`,
         "Hal: Surat Pengalaman Kerja",
         "",
-        "Dengan ini kami dari PT. SYUKUR BERSAUDARA menyatakan bahwa :",
+        "Dengan ini kami dari Alenkosa menyatakan bahwa :",
         `Nama: ${nama}`,
         `Alamat: ${alamat}`,
         `Jabatan: ${jabatan}`,
@@ -1293,7 +1293,7 @@ const finishTraining = async (t: StoreItem) => {
         "Kami berterima kasih atas segala kerjasama, konstribusi dan segala upaya yang telah diberikan guna perkembangan perusahaan yang lebih baik.",
         "",
         `Samarinda, ${tgl}`,
-        "PT. Syukur Bersaudara",
+        "Alenkosa",
         "",
         "Suci Permata Sari",
         "HR",
@@ -1318,13 +1318,13 @@ const finishTraining = async (t: StoreItem) => {
         `Agama: ${agama}`,
         `Status : ${statusKawin}`,
         "",
-        `Benar bekerja sebagai karyawan di PT. SYUKUR BERSAUDARA sejak ${tMulai}`,
+        `Benar bekerja sebagai karyawan di Alenkosa sejak ${tMulai}`,
         `sampai dengan sekarang, dengan jabatan ${jabatan}.`,
         "",
         "Demikian surat keterangan ini kami buat agar dipergunakan sebagaimana mestinya.",
         "",
         `Samarinda, ${tgl}`,
-        "PT. Syukur Bersaudara",
+        "Alenkosa",
         "",
         "Suci Permata Sari",
         "HRD",
@@ -1338,7 +1338,7 @@ const finishTraining = async (t: StoreItem) => {
 
     const lines = [
       `SURAT ${jenis.toUpperCase()}`,
-      "PT Syukur Bersaudara",
+      "Alenkosa",
       "",
       `Nomor: ${docNo}`,
       `Tanggal: ${tgl}`,

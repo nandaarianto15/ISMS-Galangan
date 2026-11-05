@@ -131,7 +131,7 @@ const PPN_RATE = 12;
 
 /** Klausul K3 standar yang dipakai SPK bila WO tidak menyimpan klausul sendiri. */
 const K3_CLAUSE =
-  "Pelaksanaker wajib menerapkan SMK3 PT Syukur Bersaudara: izin kerja untuk pekerjaan panas dan ruang terbatas, alat pelindung diri lengkap, pengendalian bahaya sebelum kerja dimulai, serta melaporkan seluruh insiden K3 dalam 1 x 24 jam.";
+  "Pelaksanaker wajib menerapkan SMK3 Alenkosa: izin kerja untuk pekerjaan panas dan ruang terbatas, alat pelindung diri lengkap, pengendalian bahaya sebelum kerja dimulai, serta melaporkan seluruh insiden K3 dalam 1 x 24 jam.";
 
 /** Tarif PPh final default untuk tagihan; baris invoice menyimpannya sendiri. */
 const PPH_RATE = 2;
@@ -1018,7 +1018,7 @@ const sptRecipe: Recipe<SptInput> = {
       masaPajak: str(t, "period"),
       npwp: str(t, "npwp") !== "-" ? str(t, "npwp") : "01.234.567.8-901.000",
       npwpPenyetor: str(t, "npwpPenyetor"),
-      namaWajibPajak: "PT. SYUKUR BERSAUDARA",
+      namaWajibPajak: "Alenkosa",
       alamat: "Jl. Mulawarman No.23, Samarinda",
       rows,
       ppnTerutang: final,
